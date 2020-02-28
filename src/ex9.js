@@ -3,8 +3,7 @@ class Programa {
 
     constructor(alunos) {
         alunos.forEach((aluno) => {
-            if (this.alunos.length > 30) return;
-            this.alunos.push(aluno);
+            this.addAluno(aluno);
         })
     }
 
