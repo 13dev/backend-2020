@@ -1,0 +1,14 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ficha2": "node src/ficha2.js",
+    "ex9": "node src/ex9.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
