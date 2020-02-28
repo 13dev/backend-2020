@@ -113,6 +113,7 @@ class Aluno {
     }
 }
 
+// Execution program.
 var programa = new Programa([
     new Aluno(2019019, 13),
     new Aluno(2019018, 12),
@@ -121,7 +122,6 @@ var programa = new Programa([
     new Aluno(2019213, 3),
     new Aluno(2019213, 4),
 ]);
-
 
 programa.listar();
 programa.melhorNota();
