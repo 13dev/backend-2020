@@ -36,11 +36,19 @@ module.exports = {
         return soma / array.length;
     },
 
-    index: function(array, element) {
+    indexOf: function(array, element) {
         for(var i = 0; i !== array.length;i++){
             if (array[i] === element){
                 return i;
             }
         }
+    },
+
+    subArray: function(array, startIndex, endIndex) {
+        var newArray = [];
+        for(var i = startIndex; i <= endIndex;i++){
+            newArray.push(array[i]);
+        }
+        return newArray;
     }
 };

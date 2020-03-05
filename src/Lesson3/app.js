@@ -6,7 +6,7 @@ function download(started, update, completed) {
     for(let i = 0;i <= 100;i++) {
         setTimeout(function () {
             update(i);
-        },  300 * i);
+        },  1 * i);
     }
     completed();
 }
@@ -34,6 +34,9 @@ console.log(
     'max:', max,
     'min:', min,
     'media:', media,
-    'Indice:', arrUtils.index(arr, 2)
+    'Indice:', arrUtils.indexOf(arr, 2)
 );
+
+
+console.log('subArray:', arrUtils.subArray(arr, 2, 4));
 

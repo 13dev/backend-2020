@@ -1,5 +1,5 @@
 var ficha2 = require('./ficha2');
-const {Aluno, Programa}= require('./ex9.js');
+const {Aluno, Programa} = require('./ex9.js');
 
 console.log('IMC = ', ficha2.imcFunc(60, 1.80));
 
