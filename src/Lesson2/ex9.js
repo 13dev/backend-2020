@@ -1,3 +1,4 @@
+
 class Programa {
     alunos = [];
 
@@ -7,9 +8,16 @@ class Programa {
         })
     }
 
+    addAlunos (alunos) {
+        alunos.forEach((aluno) => {
+            this.addAluno(aluno);
+        });
+    }
+
     addAluno(aluno) {
-        if (typeof aluno !== Aluno || this.alunos.length > 30) {
-            throw new DOMException("Impossivel adicionar aluno.");
+        if (this.alunos.length > 30) {
+            console.log("Impossivel adicionar aluno.");
+            return;
         }
 
         this.alunos.push(aluno);
@@ -113,19 +121,5 @@ class Aluno {
     }
 }
 
-// Execution program.
-var programa = new Programa([
-    new Aluno(2019019, 13),
-    new Aluno(2019018, 12),
-    new Aluno(2019017, 9),
-    new Aluno(2019016, 20),
-    new Aluno(2019213, 3),
-    new Aluno(2019213, 4),
-]);
 
-programa.listar();
-programa.melhorNota();
-programa.piorNota();
-programa.notasNegativas();
-programa.notasPositivas();
-programa.notaMedia();
+module.exports = {Aluno, Programa};

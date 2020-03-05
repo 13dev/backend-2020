@@ -2,12 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "src/Lesson2/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ficha2": "node src/ficha2.js",
-    "ex9": "node src/ex9.js",
-    "lesson3": "node src/Lesson3/app.js"
+    "lesson": "func() { node src/Lesson\"$1\"/app.js; }; func"
   },
   "keywords": [],
   "author": "",
