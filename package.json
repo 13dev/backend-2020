@@ -5,7 +5,7 @@
   "main": "src/Lesson2/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lesson": "func() { node src/Lesson\"$1\"/app.js; }; func"
+    "lesson": "node src/app.js"
   },
   "keywords": [],
   "author": "",
