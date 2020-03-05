@@ -4,7 +4,9 @@ var arrUtils = require('./ArrayUtils');
 function download(started, update, completed) {
     started();
     for(let i = 0;i <= 100;i++) {
-        setTimeout(function () { update(i);  },  1000 * i);
+        setTimeout(function () {
+            update(i);
+        },  300 * i);
     }
     completed();
 }
@@ -13,11 +15,11 @@ var started = function(){
     console.log("Started Download");
 };
 
-var update = function(i){
+var update = function(i) {
     console.log("Updating..... " + i + "%");
 };
 
-var completed = function(){
+var completed = function() {
     console.log("Completed Download");
 };
 

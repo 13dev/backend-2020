@@ -4,9 +4,8 @@ module.exports = {
         if (array.length === 0) {
             return true;
         }
-        else {
-            return false;
-        }
+
+        return false;
     },
 
     max: function (array) {
@@ -20,9 +19,9 @@ module.exports = {
     },
 
     min: function (array) {
-        var min = 0;
+        var min = Number.POSITIVE_INFINITY;
         for (i = 0; i < array.length; i++) {
-            if (array[i] < Number.POSITIVE_INFINITY) {
+            if (array[i] < min ) {
                 min = array[i];
             }
         }
