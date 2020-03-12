@@ -50,5 +50,36 @@ module.exports = {
             newArray.push(array[i]);
         }
         return newArray;
-    }
+    },
+
+    isSameLength: function(array1, array2) {
+        return array1.length === array2.length;
+    },
+
+    reverse: function (array) {
+        var result = [];
+
+        for (var i = array.length; i > 0; i--) {
+            result.push(array[i]);
+        }
+
+        return result;
+    },
+
+    swap: function(array, index1, index2) {
+        var temp = array[index1];
+
+        array[index1] = array[index2];
+        array[index2] = temp;
+
+        return array;
+    },
+    contains: function(array, value) {
+        return array.includes(value);
+    },
+
+    concatenate: function (array1, array2) {
+        return [...array1, ...array2];
+    },
+
 };
