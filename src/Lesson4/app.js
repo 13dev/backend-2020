@@ -46,30 +46,27 @@ for (var i = 0; i < Arr.length; i++) {
     Arr[i](); // Invoke callback
 }
 
-Arr.forEach(function (index) {
-    index();
+Arr.forEach(function (callback) {
+    callback();
 });
 
 //
 
-var emitter = new Emitter();
-
-emitter.on(events.GREET, function() {
+Emitter.on(events.GREET, function() {
    console.log("Event greet!");
 });
 
-emitter.on(events.GREET, function() {
+Emitter.on(events.GREET, function() {
     console.log("Event greet2!");
 });
 
-emitter.on(events.HI, function() {
+Emitter.on(events.HI, function() {
     console.log("Event hi!");
 });
 
 // Emmit events;
-
-emitter.emit(events.GREET);
-emitter.emit(events.HI);
+Emitter.emit(events.GREET);
+Emitter.emit(events.HI);
 
 
 

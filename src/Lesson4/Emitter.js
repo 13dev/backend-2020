@@ -22,4 +22,4 @@ Emitter.prototype.emit = function(type) {
     }
 };
 
-module.exports = Emitter;
+module.exports = new Emitter;
