@@ -1,9 +1,5 @@
-class Emitter {
-    events;
-
-    constructor(events = {}) {
-        this.events = events;
-    }
+function Emitter(events = {}) {
+    this.events = events;
 }
 
 Emitter.prototype.on = function (type, listener) {
